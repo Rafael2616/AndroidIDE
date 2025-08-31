@@ -2,7 +2,7 @@ md' Build and test
 
 on:
   push:
-    branches: [ "dev", "main", "indexing", "release/**" ]
+    branches: [ "dev" ]
     paths-ignore:
       - '**.md'
       - 'fastlane/**'
@@ -303,7 +303,7 @@ jobs:
         with:
           submodules: 'recursive'
           fetch-depth: 0
-      - name: Set up JDK 17 
+      - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: ${{ env.BUILD_JAVA_VERSION }}

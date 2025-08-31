@@ -1,4 +1,4 @@
-name: Build and test
+md' Build and test
 
 on:
   push:
@@ -303,7 +303,7 @@ jobs:
         with:
           submodules: 'recursive'
           fetch-depth: 0
-      - name: Set up JDK 17
+      - name: Set up JDK 17 
         uses: actions/setup-java@v4
         with:
           java-version: ${{ env.BUILD_JAVA_VERSION }}
